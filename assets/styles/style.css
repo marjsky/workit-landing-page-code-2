@@ -10,6 +10,12 @@
   justify-content: space-between;
 }
 
+.header__patterns {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
 .header__content {
   display: flex;
   flex-direction: column;
@@ -45,4 +51,29 @@
   position: absolute;
   bottom: 60px;
   width: 320px;
+}
+
+
+@media (min-width: 768px) {
+  .header__patterns {
+    display: block;
+  }
+  .header__pattern-1 {
+    position: absolute;
+    top: 60px;
+    left: -220px;
+  }
+  .header__pattern-2 {
+    position: absolute;
+    top: 220px;
+    right: -100px;
+  }
+}
+@media (min-width: 1440px) {
+ .header__pattern-1 {
+  left: -120px;
+ }
+ .header__pattern-2 {
+  right: -60px;
+ }
 }
