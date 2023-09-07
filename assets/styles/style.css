@@ -116,6 +116,27 @@
 .personal__card-btn {
   width: 172px;
 }
+.personal__pattern {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 240px;
+}
+.footer__logo {
+  width: 95px;
+  margin-bottom: 58px;
+}
+.footer__social-item {
+  margin: 14px;
+  cursor: pointer;
+}
+
 
 @media (min-width: 768px) {
   .header__patterns {
@@ -170,6 +191,15 @@
   .personal__card-description {
     margin-bottom: 24px;
   }
+  .personal__pattern {
+    display: block;
+  }
+  .personal__pattern-3 {
+    position: absolute;
+    top: -100px;
+    left: 450px;
+  }
+
 }
 
 @media (min-width: 1440px) {
@@ -223,5 +253,12 @@
   }
   .personal__card-btn {
     width: 190px;
+  }
+  .personal__pattern-3 {
+    top: -140px;
+    left: 820px;
+  }
+  .footer {
+    min-height: 320px;
   }
 }
